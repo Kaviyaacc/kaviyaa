@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html >
+<head>
+     <title>FOOD COURT</title>
+    <style>
+        body 
+        {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .navbar
+         {
+            display: flex;
+            justify-content: center;
+            background-color:wheat;
+            width: 100%;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .navbar ul
+         {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar li
+         {
+            margin: 0 10px;
+        }
+
+        .navbar a
+         {
+            display: flex;
+            align-items: center;
+            color: rebeccapurple;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a img 
+        {
+            margin-right: 8px;
+        }
+
+        .navbar a:hover:not(.active)
+         {
+            background-color: #04AA6D;
+        }
+
+        .gallery
+         {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .gallery-item 
+        {
+            margin: 10px;
+            text-align: center;
+        }
+
+        .gallery img
+         {
+            width: 150px;
+            height: 200px;
+            margin-bottom: 10px;
+            
+        }
+
+        .gallery img:hover 
+        {
+            transform: scale(1.05);
+            border-color: #04AA6D;
+        }
+
+        .btn 
+        {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 14px;
+            color: #fff;
+            background-color: #1cb33d;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .btn:hover
+         {
+            background-color: #1cb33d;
+        }
+
+        .btn-view
+         {
+            background-color: #2196F3;
+        }
+
+        .btn-view:hover 
+        {
+            background-color: #1976D2;
+        }
+
+body 
+{
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+footer 
+{
+    background-color:white;
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: left;
+    gap: 15px;
+}
+
+.footer-icons .icon {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.footer-icons .icon:hover {
+    color: #ddd;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <h1>
+        <div>
+            <center>
+             <img src="img/ffdd.png" alt="" width="300" height="200"> 
+             </center>
+            </h1>
+
+             <div class="navbar">
+                <ul>
+                    <li><a class="active" href="index.html"><img src="img/icon1.png" alt="" width="20px" height="20px">HOME</a></li>
+                    <li><a href="about.html"><img src="img/icon2.png" alt="" width="20px" height="20px">ABOUT</a></li>
+                    <li><a href="contact.html"><img src="img/icon3.png" alt="" width="20px" height="20px">CONTACT</a></li>
+                    <li><a href="login.html"><img src="img/icon4.png" alt="" width="20px" height="20px">LOGIN</a></li>
+                </ul>
+            </div>
+            <br>
+            <img src="img/img.png" alt="" width="1350" height="400">
+         </div>
+
+    <!-- <div class="navbar">
+        <ul>
+            <li><a class="active" href="New.html"><img src="icon1.png" alt="" width="20px" height="20px">HOME</a></li>
+            <li><a href="abst.html"><img src="icon2.png" alt="" width="20px" height="20px">ABOUT</a></li>
+            <li><a href="cont.html"><img src="icon3.png" alt="" width="20px" height="20px">CONTACT</a></li>
+            <li><a href="logi.html"><img src="icon4.png" alt="" width="20px" height="20px">LOGIN</a></li>
+        </ul>
+    </div>
+     -->
+    <center>
+    <h2>MENU CARDS</h2>
+      <div>
+      <img src="img/non11.jpg" alt="" width="500" height="400">
+
+      <img src="img/i.jpg" alt="" width="500" height="400">
+    </div>
+      </center>
+     <center>
+        <h3>NON VEG FOODS</h3>
+      </center>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="img/f1.jpg" alt="Image 1" width="300" height="200">
+            <br>
+            <b>
+            <p style="color: red;" >CHICKEN CRVY</p>
+            <p style="color: black;" >PRICE:100</p>
+            </b>
+            <a href="#" class="btn btn-view">View</a>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="gallery-item">
+            <img src="img/f2.jpg" alt="Image 2" width="300" height="200">
+            <br>
+            <b>
+                <p style="color: red;" > CHICKEN ROOL </p>
+                <p style="color: black;" >PRICE:145</p>
+                </b>
+            <a href="#" class="btn btn-view">View</a>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="gallery-item">
+            <img src="img/f3.jpg" alt="Image 3"  width="300" height="200">
+            <br>
+            <b>
+                <p style="color: red;" > CHICKEN SANDWICH</p>
+                <p style="color: black;" >PRICE:40</p>
+                </b>
+            <a href="#" class="btn btn-view">View</a>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="gallery-item">
+            <img src="img/f4.jpg" alt="Image 4" width="300" height="200">
+            <br>
+            <b>
+                <p style="color: red;" >FRIED CHICKEN</p>
+                <p style="color: black;" >PRICE:90 </p>
+                </b>
+            <a href="#" class="btn btn-view">View</a>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="gallery-item">
+            <img src="img/f5.jpg" alt="Image 3" width="300" height="200">
+            <br>
+            <b>
+                <p style="color: red;" >PEPER CHICKEN</p>
+                <p style="color: black;" >PRICE:99</p>
+                </b>
+            <a href="#" class="btn btn-view">View</a>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="gallery-item">
+            <img src="img/f6.jpg" alt="Image 4" width="300" height="200">
+            <br>
+            <b>
+                <p style="color: red;" >CHICKEN NOODLES </p>
+                <p style="color: black;" >PRICE:80</p>
+                </b>
+            <a href="#" class="btn btn-view">View</a>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+    </div>
+    <center>
+        <h3>VEG FOODS</h3>
+      </center>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="img/veg.jpg" alt="Image 1" width="300" height="200">
+            <br>
+            <b>
+                <p style="color: red;" >CHAPATHI NOODLES</p>
+                <p style="color: black;" >PRICE:150</p>
+                </b>
+            <a href="#" class="btn btn-view">View</a>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+    <div class="gallery-item">
+            <img src="img/veg21.png" alt="Image 2" width="300" height="200">
+            <br>
+            <b>
+                <p style="color: red;" >MEELS</p>
+                <p style="color: black;" >PRICE:90</p>
+                </b>
+            <a href="#" class="btn btn-view">View</a>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+    <div class="gallery-item">
+            <img src="img/veg3.jpg" alt="Image 3" width="300" height="200">
+            <br>
+            <b>
+                <p style="color: red;" >VEG BURGUR </p>
+                <p style="color: black;" >PRICE:80</p>
+                </b>
+            <a href="#" class="btn btn-view">View</a>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+    <div class="gallery-item">
+            <img src="img/veg41.jpg" alt="Image 4" width="100" height="100">
+            <br>
+            <b>
+                <p style="color: red;" >CORN VEGTABLES</p>
+                <p style="color: black;" >PRICE:25</p>
+                </b>
+            <a href="#" class="btn btn-view">View</a>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+    <div class="gallery-item">
+            <img src="img/veg5.jpg" alt="Image 3" width="400" height="500">
+            <br>
+            <b>
+                <p style="color: red;" >PANEER CRAVY</p>
+                <p style="color: black;" >PRICE:120</p>
+                </b>
+            <a href="#" class="btn btn-view">View</a>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+    <div class="gallery-item">
+            <img src="img/veg6.jpg" alt="Image 4"  width="300" height="200">
+            <br>
+            <b>
+                <p style="color: red;" >KALAN CRAVY </p>
+                <p style="color: black;" >PRICE:40</p>
+                </b>
+            <a href="#" class="btn btn-view">View</a>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+    </div>
+    <center>
+        <h3>JUICE ITEMS</h3>
+      </center>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="img/juice1.jpg" alt="Image 1">
+            <br>
+            <b>
+                <p style="color: red;" >BLUE MOJITO</p>
+                <p style="color: black;" >PRICE:40</p>
+                </b>
+            <a href="#" class="btn btn-view">View</a>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="gallery-item">
+            <img src="img/j8.jpg" alt="Image 2">
+            <br>
+            <b>
+                <p style="color: red;" >LEMON JUICE</p>
+                <p style="color: black;" >PRICE:25</p>
+                </b>
+            <a href="#" class="btn btn-view">View</a>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="gallery-item">
+            <img src="img/j4.jpg" alt="Image 3">
+            <br>
+            <b>
+                <p style="color: red;" >ORANGE JUICE</p>
+                <p style="color: black;" >PRICE:30</p>
+                </b>
+            <a href="#" class="btn btn-view">View</a>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="gallery-item">
+            <img src="img/j5.jpg" alt="Image 4">
+            <br>
+            <b>
+                <p style="color: red;" >GRANET JUICE </p>
+                <p style="color: black;" >PRICE:50</p>
+                </b>
+            <a href="#" class="btn btn-view">View</a>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="gallery-item">
+            <img src="img/j6.jpg" alt="Image 3">
+            <br>
+            <b>
+                <p style="color: red;" >STRSWBERRY JUICE</p>
+                <p style="color: black;" >PRICE:60</p>
+                </b>
+            <a href="#" class="btn btn-view">View</a>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="gallery-item">
+            <img src="img/j7.jpg" alt="Image 4">
+            <br>
+            <b>
+                <p style="color: red;" >PINEAPPLE JUICE</p>
+                <p style="color: black;" >PRICE:80</p>
+                </b>
+            <a href="#" class="btn btn-view">View</a>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+    </div>
+    <div>
+        <center>
+            <h3>
+                <b>
+                @foodcourt2024
+                </b>
+            </h3>
+        </center>
+    </div>
+
+    <footer>
+        <div class="footer-icons">
+            <a href="https://mail.com" target="_blank" class="icon"><img src="img/icon..png" width="50" height="50"><i class="fab fa-mail-f"></i></a>
+            <br>
+            <a href="https://facebook.com" target="_blank" class="icon"><img src="img/icon1..png" width="50" height="50"><i class="fab fa-facebook"></i></a>
+            <br>
+            <a href="https://twitter.com" target="_blank" class="icon"><img src="img/icon2..png" width="50" height="50"><i class="fab fa-twitter"></i></a>
+           <br>
+            <a href="https://telegram.com" target="_blank" class="icon"><img src="img/icon3..png" width="50" height="50"><i class="fab fa-telegram-in"></i></a>
+       <br>
+        </div>
+    </footer>
+</body>
+</html>

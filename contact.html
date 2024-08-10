@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Food Court</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #f1f1f1;
+            width: 100%;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar li {
+            margin: 0 10px;
+        }
+
+        .navbar a {
+            display: flex;
+            align-items: center;
+            color: rebeccapurple;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a img {
+            margin-right: 8px;
+        }
+
+        .navbar a:hover:not(.active) {
+            background-color: #04AA6D;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .contact {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .contact h2 {
+            margin-top: 0;
+        }
+
+        .contact label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .contact input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+
+        .contact button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #04AA6D;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .contact button:hover
+         {
+            background-color: #039a5a;
+        }
+
+        footer
+         {
+            text-align: center;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border-top: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a class="active" href="index.html"><img src="img/icon1.png" alt="Home Icon" width="20" height="20">Home</a></li>
+            <li><a href="about.html"><img src="img/icon2.png" alt="About Icon" width="20" height="20">About</a></li>
+            <li><a href="contact.html"><img src="img/icon3.png" alt="Contact Icon" width="20" height="20">Contact</a></li>
+            <li><a href="login.html"><img src="img/icon4.png" alt="Login Icon" width="20" height="20">Login</a></li>
+        </ul>
+    </div>
+
+           <center>
+            <h2> CONTACT</h2>
+            </center>
+            <center>
+            <div class="contact">
+            <form id="contactForm" action="submit_contact.php" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Your Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <button type="submit">Submit</button>
+            </center>
+            </form>
+        </div>
+        </section>
+ <footer>
+        <p>&copy; 2024 Food Court. All rights reserved.</p>
+    </footer>
+</body>
+</html>
